@@ -1,0 +1,2714 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.RelationshipCalculations.true...RelationshipCalculations />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='2020_bexar' inline='true' name='federated.1m6bb3m0nruabu1bykeew0db0t9s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2020_bexar' name='textscan.1o2vm7a1doukp51047re81g9uhyx'>
+            <connection class='textscan' directory='C:/Users/jorda/Downloads' filename='2020_bexar.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Bexar_County_Census_Tracts' name='ogrdirect.12oilfb1p950781cvmyac1vsscbg'>
+            <connection class='ogrdirect' directory='C:/Users/jorda/Downloads' filename='Bexar_County_Census_Tracts.geojson' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1o2vm7a1doukp51047re81g9uhyx' name='2020_bexar.csv' table='[2020_bexar#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='activity_year' ordinal='0' />
+            <column datatype='string' name='lei' ordinal='1' />
+            <column datatype='integer' name='derived_msa_md' ordinal='2' />
+            <column datatype='string' name='state_code' ordinal='3' />
+            <column datatype='integer' name='county_code' ordinal='4' />
+            <column datatype='integer' name='census_tract' ordinal='5' />
+            <column datatype='string' name='conforming_loan_limit' ordinal='6' />
+            <column datatype='string' name='derived_loan_product_type' ordinal='7' />
+            <column datatype='string' name='derived_dwelling_category' ordinal='8' />
+            <column datatype='string' name='derived_ethnicity' ordinal='9' />
+            <column datatype='string' name='derived_race' ordinal='10' />
+            <column datatype='string' name='derived_sex' ordinal='11' />
+            <column datatype='integer' name='action_taken' ordinal='12' />
+            <column datatype='integer' name='purchaser_type' ordinal='13' />
+            <column datatype='integer' name='preapproval' ordinal='14' />
+            <column datatype='integer' name='loan_type' ordinal='15' />
+            <column datatype='integer' name='loan_purpose' ordinal='16' />
+            <column datatype='integer' name='lien_status' ordinal='17' />
+            <column datatype='integer' name='reverse_mortgage' ordinal='18' />
+            <column datatype='integer' name='open_end_line_of_credit' ordinal='19' />
+            <column datatype='integer' name='business_or_commercial_purpose' ordinal='20' />
+            <column datatype='integer' name='loan_amount' ordinal='21' />
+            <column datatype='string' name='combined_loan_to_value_ratio' ordinal='22' />
+            <column datatype='string' name='interest_rate' ordinal='23' />
+            <column datatype='string' name='rate_spread' ordinal='24' />
+            <column datatype='integer' name='hoepa_status' ordinal='25' />
+            <column datatype='string' name='total_loan_costs' ordinal='26' />
+            <column datatype='string' name='total_points_and_fees' ordinal='27' />
+            <column datatype='string' name='origination_charges' ordinal='28' />
+            <column datatype='string' name='discount_points' ordinal='29' />
+            <column datatype='string' name='lender_credits' ordinal='30' />
+            <column datatype='integer' name='loan_term' ordinal='31' />
+            <column datatype='string' name='prepayment_penalty_term' ordinal='32' />
+            <column datatype='string' name='intro_rate_period' ordinal='33' />
+            <column datatype='integer' name='negative_amortization' ordinal='34' />
+            <column datatype='integer' name='interest_only_payment' ordinal='35' />
+            <column datatype='integer' name='balloon_payment' ordinal='36' />
+            <column datatype='integer' name='other_nonamortizing_features' ordinal='37' />
+            <column datatype='string' name='property_value' ordinal='38' />
+            <column datatype='integer' name='construction_method' ordinal='39' />
+            <column datatype='integer' name='occupancy_type' ordinal='40' />
+            <column datatype='integer' name='manufactured_home_secured_property_type' ordinal='41' />
+            <column datatype='integer' name='manufactured_home_land_property_interest' ordinal='42' />
+            <column datatype='integer' name='total_units' ordinal='43' />
+            <column datatype='string' name='multifamily_affordable_units' ordinal='44' />
+            <column datatype='string' name='income' ordinal='45' />
+            <column datatype='string' name='debt_to_income_ratio' ordinal='46' />
+            <column datatype='integer' name='applicant_credit_score_type' ordinal='47' />
+            <column datatype='integer' name='co_applicant_credit_score_type' ordinal='48' />
+            <column datatype='integer' name='applicant_ethnicity_1' ordinal='49' />
+            <column datatype='string' name='applicant_ethnicity_2' ordinal='50' />
+            <column datatype='string' name='applicant_ethnicity_3' ordinal='51' />
+            <column datatype='string' name='applicant_ethnicity_4' ordinal='52' />
+            <column datatype='string' name='applicant_ethnicity_5' ordinal='53' />
+            <column datatype='integer' name='co_applicant_ethnicity_1' ordinal='54' />
+            <column datatype='string' name='co_applicant_ethnicity_2' ordinal='55' />
+            <column datatype='string' name='co_applicant_ethnicity_3' ordinal='56' />
+            <column datatype='string' name='co_applicant_ethnicity_4' ordinal='57' />
+            <column datatype='string' name='co_applicant_ethnicity_5' ordinal='58' />
+            <column datatype='integer' name='applicant_ethnicity_observed' ordinal='59' />
+            <column datatype='integer' name='co_applicant_ethnicity_observed' ordinal='60' />
+            <column datatype='integer' name='applicant_race_1' ordinal='61' />
+            <column datatype='string' name='applicant_race_2' ordinal='62' />
+            <column datatype='string' name='applicant_race_3' ordinal='63' />
+            <column datatype='string' name='applicant_race_4' ordinal='64' />
+            <column datatype='string' name='applicant_race_5' ordinal='65' />
+            <column datatype='integer' name='co_applicant_race_1' ordinal='66' />
+            <column datatype='string' name='co_applicant_race_2' ordinal='67' />
+            <column datatype='string' name='co_applicant_race_3' ordinal='68' />
+            <column datatype='string' name='co_applicant_race_4' ordinal='69' />
+            <column datatype='string' name='co_applicant_race_5' ordinal='70' />
+            <column datatype='integer' name='applicant_race_observed' ordinal='71' />
+            <column datatype='integer' name='co_applicant_race_observed' ordinal='72' />
+            <column datatype='integer' name='applicant_sex' ordinal='73' />
+            <column datatype='integer' name='co_applicant_sex' ordinal='74' />
+            <column datatype='integer' name='applicant_sex_observed' ordinal='75' />
+            <column datatype='integer' name='co_applicant_sex_observed' ordinal='76' />
+            <column datatype='string' name='applicant_age' ordinal='77' />
+            <column datatype='string' name='co_applicant_age' ordinal='78' />
+            <column datatype='string' name='applicant_age_above_62' ordinal='79' />
+            <column datatype='string' name='co_applicant_age_above_62' ordinal='80' />
+            <column datatype='integer' name='submission_of_application' ordinal='81' />
+            <column datatype='integer' name='initially_payable_to_institution' ordinal='82' />
+            <column datatype='integer' name='aus_1' ordinal='83' />
+            <column datatype='string' name='aus_2' ordinal='84' />
+            <column datatype='string' name='aus_3' ordinal='85' />
+            <column datatype='string' name='aus_4' ordinal='86' />
+            <column datatype='string' name='aus_5' ordinal='87' />
+            <column datatype='integer' name='denial_reason_1' ordinal='88' />
+            <column datatype='string' name='denial_reason_2' ordinal='89' />
+            <column datatype='string' name='denial_reason_3' ordinal='90' />
+            <column datatype='string' name='denial_reason_4' ordinal='91' />
+            <column datatype='integer' name='tract_population' ordinal='92' />
+            <column datatype='real' name='tract_minority_population_percent' ordinal='93' />
+            <column datatype='integer' name='ffiec_msa_md_median_family_income' ordinal='94' />
+            <column datatype='integer' name='tract_to_msa_income_percentage' ordinal='95' />
+            <column datatype='integer' name='tract_owner_occupied_units' ordinal='96' />
+            <column datatype='integer' name='tract_one_to_four_family_homes' ordinal='97' />
+            <column datatype='integer' name='tract_median_age_of_housing_units' ordinal='98' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1o2vm7a1doukp51047re81g9uhyx' name='2020_bexar.csv' table='[2020_bexar#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='activity_year' ordinal='0' />
+              <column datatype='string' name='lei' ordinal='1' />
+              <column datatype='integer' name='derived_msa_md' ordinal='2' />
+              <column datatype='string' name='state_code' ordinal='3' />
+              <column datatype='integer' name='county_code' ordinal='4' />
+              <column datatype='integer' name='census_tract' ordinal='5' />
+              <column datatype='string' name='conforming_loan_limit' ordinal='6' />
+              <column datatype='string' name='derived_loan_product_type' ordinal='7' />
+              <column datatype='string' name='derived_dwelling_category' ordinal='8' />
+              <column datatype='string' name='derived_ethnicity' ordinal='9' />
+              <column datatype='string' name='derived_race' ordinal='10' />
+              <column datatype='string' name='derived_sex' ordinal='11' />
+              <column datatype='integer' name='action_taken' ordinal='12' />
+              <column datatype='integer' name='purchaser_type' ordinal='13' />
+              <column datatype='integer' name='preapproval' ordinal='14' />
+              <column datatype='integer' name='loan_type' ordinal='15' />
+              <column datatype='integer' name='loan_purpose' ordinal='16' />
+              <column datatype='integer' name='lien_status' ordinal='17' />
+              <column datatype='integer' name='reverse_mortgage' ordinal='18' />
+              <column datatype='integer' name='open_end_line_of_credit' ordinal='19' />
+              <column datatype='integer' name='business_or_commercial_purpose' ordinal='20' />
+              <column datatype='integer' name='loan_amount' ordinal='21' />
+              <column datatype='string' name='combined_loan_to_value_ratio' ordinal='22' />
+              <column datatype='string' name='interest_rate' ordinal='23' />
+              <column datatype='string' name='rate_spread' ordinal='24' />
+              <column datatype='integer' name='hoepa_status' ordinal='25' />
+              <column datatype='string' name='total_loan_costs' ordinal='26' />
+              <column datatype='string' name='total_points_and_fees' ordinal='27' />
+              <column datatype='string' name='origination_charges' ordinal='28' />
+              <column datatype='string' name='discount_points' ordinal='29' />
+              <column datatype='string' name='lender_credits' ordinal='30' />
+              <column datatype='integer' name='loan_term' ordinal='31' />
+              <column datatype='string' name='prepayment_penalty_term' ordinal='32' />
+              <column datatype='string' name='intro_rate_period' ordinal='33' />
+              <column datatype='integer' name='negative_amortization' ordinal='34' />
+              <column datatype='integer' name='interest_only_payment' ordinal='35' />
+              <column datatype='integer' name='balloon_payment' ordinal='36' />
+              <column datatype='integer' name='other_nonamortizing_features' ordinal='37' />
+              <column datatype='string' name='property_value' ordinal='38' />
+              <column datatype='integer' name='construction_method' ordinal='39' />
+              <column datatype='integer' name='occupancy_type' ordinal='40' />
+              <column datatype='integer' name='manufactured_home_secured_property_type' ordinal='41' />
+              <column datatype='integer' name='manufactured_home_land_property_interest' ordinal='42' />
+              <column datatype='integer' name='total_units' ordinal='43' />
+              <column datatype='string' name='multifamily_affordable_units' ordinal='44' />
+              <column datatype='string' name='income' ordinal='45' />
+              <column datatype='string' name='debt_to_income_ratio' ordinal='46' />
+              <column datatype='integer' name='applicant_credit_score_type' ordinal='47' />
+              <column datatype='integer' name='co_applicant_credit_score_type' ordinal='48' />
+              <column datatype='integer' name='applicant_ethnicity_1' ordinal='49' />
+              <column datatype='string' name='applicant_ethnicity_2' ordinal='50' />
+              <column datatype='string' name='applicant_ethnicity_3' ordinal='51' />
+              <column datatype='string' name='applicant_ethnicity_4' ordinal='52' />
+              <column datatype='string' name='applicant_ethnicity_5' ordinal='53' />
+              <column datatype='integer' name='co_applicant_ethnicity_1' ordinal='54' />
+              <column datatype='string' name='co_applicant_ethnicity_2' ordinal='55' />
+              <column datatype='string' name='co_applicant_ethnicity_3' ordinal='56' />
+              <column datatype='string' name='co_applicant_ethnicity_4' ordinal='57' />
+              <column datatype='string' name='co_applicant_ethnicity_5' ordinal='58' />
+              <column datatype='integer' name='applicant_ethnicity_observed' ordinal='59' />
+              <column datatype='integer' name='co_applicant_ethnicity_observed' ordinal='60' />
+              <column datatype='integer' name='applicant_race_1' ordinal='61' />
+              <column datatype='string' name='applicant_race_2' ordinal='62' />
+              <column datatype='string' name='applicant_race_3' ordinal='63' />
+              <column datatype='string' name='applicant_race_4' ordinal='64' />
+              <column datatype='string' name='applicant_race_5' ordinal='65' />
+              <column datatype='integer' name='co_applicant_race_1' ordinal='66' />
+              <column datatype='string' name='co_applicant_race_2' ordinal='67' />
+              <column datatype='string' name='co_applicant_race_3' ordinal='68' />
+              <column datatype='string' name='co_applicant_race_4' ordinal='69' />
+              <column datatype='string' name='co_applicant_race_5' ordinal='70' />
+              <column datatype='integer' name='applicant_race_observed' ordinal='71' />
+              <column datatype='integer' name='co_applicant_race_observed' ordinal='72' />
+              <column datatype='integer' name='applicant_sex' ordinal='73' />
+              <column datatype='integer' name='co_applicant_sex' ordinal='74' />
+              <column datatype='integer' name='applicant_sex_observed' ordinal='75' />
+              <column datatype='integer' name='co_applicant_sex_observed' ordinal='76' />
+              <column datatype='string' name='applicant_age' ordinal='77' />
+              <column datatype='string' name='co_applicant_age' ordinal='78' />
+              <column datatype='string' name='applicant_age_above_62' ordinal='79' />
+              <column datatype='string' name='co_applicant_age_above_62' ordinal='80' />
+              <column datatype='integer' name='submission_of_application' ordinal='81' />
+              <column datatype='integer' name='initially_payable_to_institution' ordinal='82' />
+              <column datatype='integer' name='aus_1' ordinal='83' />
+              <column datatype='string' name='aus_2' ordinal='84' />
+              <column datatype='string' name='aus_3' ordinal='85' />
+              <column datatype='string' name='aus_4' ordinal='86' />
+              <column datatype='string' name='aus_5' ordinal='87' />
+              <column datatype='integer' name='denial_reason_1' ordinal='88' />
+              <column datatype='string' name='denial_reason_2' ordinal='89' />
+              <column datatype='string' name='denial_reason_3' ordinal='90' />
+              <column datatype='string' name='denial_reason_4' ordinal='91' />
+              <column datatype='integer' name='tract_population' ordinal='92' />
+              <column datatype='real' name='tract_minority_population_percent' ordinal='93' />
+              <column datatype='integer' name='ffiec_msa_md_median_family_income' ordinal='94' />
+              <column datatype='integer' name='tract_to_msa_income_percentage' ordinal='95' />
+              <column datatype='integer' name='tract_owner_occupied_units' ordinal='96' />
+              <column datatype='integer' name='tract_one_to_four_family_homes' ordinal='97' />
+              <column datatype='integer' name='tract_median_age_of_housing_units' ordinal='98' />
+            </columns>
+          </relation>
+          <relation connection='ogrdirect.12oilfb1p950781cvmyac1vsscbg' name='Bexar_County_Census_Tracts.geojson' table='[Bexar_County_Census_Tracts.geojson]' type='table'>
+            <columns>
+              <column datatype='integer' name='OBJECTID' ordinal='0' />
+              <column datatype='string' name='TRACT' ordinal='1' />
+              <column datatype='integer' name='SUM_POPULATION' ordinal='2' />
+              <column datatype='real' name='ShapeSTArea' ordinal='3' />
+              <column datatype='real' name='ShapeSTLength' ordinal='4' />
+              <column datatype='spatial' name='Geometry' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>activity_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[activity_year]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>activity_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lei</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lei]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>lei</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derived_msa_md</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[derived_msa_md]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>derived_msa_md</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_code]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>state_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[county_code]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>county_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>census_tract</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[census_tract]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>census_tract</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conforming_loan_limit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[conforming_loan_limit]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>conforming_loan_limit</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derived_loan_product_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[derived_loan_product_type]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>derived_loan_product_type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derived_dwelling_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[derived_dwelling_category]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>derived_dwelling_category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derived_ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[derived_ethnicity]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>derived_ethnicity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derived_race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[derived_race]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>derived_race</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derived_sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[derived_sex]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>derived_sex</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>action_taken</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[action_taken]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>action_taken</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchaser_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[purchaser_type]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>purchaser_type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>preapproval</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[preapproval]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>preapproval</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_type]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>loan_type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_purpose</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_purpose]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>loan_purpose</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lien_status</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lien_status]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>lien_status</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reverse_mortgage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reverse_mortgage]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>reverse_mortgage</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_end_line_of_credit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[open_end_line_of_credit]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>open_end_line_of_credit</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_or_commercial_purpose</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[business_or_commercial_purpose]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>business_or_commercial_purpose</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_amount]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>loan_amount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>combined_loan_to_value_ratio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[combined_loan_to_value_ratio]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>combined_loan_to_value_ratio</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>interest_rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[interest_rate]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>interest_rate</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rate_spread</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rate_spread]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>rate_spread</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hoepa_status</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hoepa_status]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>hoepa_status</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_loan_costs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_loan_costs]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>total_loan_costs</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_points_and_fees</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_points_and_fees]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>total_points_and_fees</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origination_charges</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[origination_charges]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>origination_charges</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discount_points</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[discount_points]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>discount_points</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lender_credits</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lender_credits]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>lender_credits</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_term</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loan_term]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>loan_term</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepayment_penalty_term</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[prepayment_penalty_term]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>prepayment_penalty_term</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intro_rate_period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[intro_rate_period]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>intro_rate_period</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negative_amortization</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negative_amortization]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>negative_amortization</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>interest_only_payment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[interest_only_payment]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>interest_only_payment</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balloon_payment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[balloon_payment]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>balloon_payment</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_nonamortizing_features</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[other_nonamortizing_features]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>other_nonamortizing_features</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_value</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[property_value]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>property_value</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>construction_method</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[construction_method]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>construction_method</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occupancy_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[occupancy_type]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>occupancy_type</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufactured_home_secured_property_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[manufactured_home_secured_property_type]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>manufactured_home_secured_property_type</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufactured_home_land_property_interest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[manufactured_home_land_property_interest]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>manufactured_home_land_property_interest</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_units]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>total_units</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>multifamily_affordable_units</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[multifamily_affordable_units]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>multifamily_affordable_units</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[income]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>income</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>debt_to_income_ratio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[debt_to_income_ratio]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>debt_to_income_ratio</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_credit_score_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[applicant_credit_score_type]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_credit_score_type</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_credit_score_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co_applicant_credit_score_type]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_credit_score_type</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_ethnicity_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[applicant_ethnicity_1]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_ethnicity_1</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_ethnicity_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_ethnicity_2]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_ethnicity_2</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_ethnicity_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_ethnicity_3]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_ethnicity_3</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_ethnicity_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_ethnicity_4]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_ethnicity_4</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_ethnicity_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_ethnicity_5]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_ethnicity_5</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_ethnicity_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co_applicant_ethnicity_1]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_ethnicity_1</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_ethnicity_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_ethnicity_2]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_ethnicity_2</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_ethnicity_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_ethnicity_3]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_ethnicity_3</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_ethnicity_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_ethnicity_4]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_ethnicity_4</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_ethnicity_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_ethnicity_5]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_ethnicity_5</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_ethnicity_observed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[applicant_ethnicity_observed]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_ethnicity_observed</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_ethnicity_observed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co_applicant_ethnicity_observed]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_ethnicity_observed</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_race_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[applicant_race_1]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_race_1</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_race_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_race_2]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_race_2</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_race_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_race_3]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_race_3</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_race_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_race_4]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_race_4</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_race_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_race_5]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_race_5</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_race_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co_applicant_race_1]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_race_1</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_race_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_race_2]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_race_2</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_race_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_race_3]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_race_3</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_race_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_race_4]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_race_4</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_race_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_race_5]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_race_5</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_race_observed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[applicant_race_observed]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_race_observed</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_race_observed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co_applicant_race_observed]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_race_observed</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_sex</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[applicant_sex]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_sex</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_sex</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co_applicant_sex]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_sex</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_sex_observed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[applicant_sex_observed]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_sex_observed</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_sex_observed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[co_applicant_sex_observed]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_sex_observed</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_age]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_age</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_age]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_age</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>applicant_age_above_62</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[applicant_age_above_62]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>applicant_age_above_62</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co_applicant_age_above_62</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[co_applicant_age_above_62]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>co_applicant_age_above_62</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>submission_of_application</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[submission_of_application]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>submission_of_application</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>initially_payable_to_institution</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[initially_payable_to_institution]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>initially_payable_to_institution</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aus_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[aus_1]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>aus_1</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aus_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aus_2]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>aus_2</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aus_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aus_3]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>aus_3</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aus_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aus_4]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>aus_4</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aus_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aus_5]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>aus_5</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>denial_reason_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[denial_reason_1]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>denial_reason_1</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>denial_reason_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[denial_reason_2]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>denial_reason_2</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>denial_reason_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[denial_reason_3]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>denial_reason_3</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>denial_reason_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[denial_reason_4]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>denial_reason_4</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tract_population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tract_population]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>tract_population</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tract_minority_population_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tract_minority_population_percent]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>tract_minority_population_percent</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ffiec_msa_md_median_family_income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ffiec_msa_md_median_family_income]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>ffiec_msa_md_median_family_income</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tract_to_msa_income_percentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tract_to_msa_income_percentage]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>tract_to_msa_income_percentage</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tract_owner_occupied_units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tract_owner_occupied_units]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>tract_owner_occupied_units</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tract_one_to_four_family_homes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tract_one_to_four_family_homes]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>tract_one_to_four_family_homes</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tract_median_age_of_housing_units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tract_median_age_of_housing_units]</local-name>
+            <parent-name>[2020_bexar.csv]</parent-name>
+            <remote-alias>tract_median_age_of_housing_units</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[Bexar_County_Census_Tracts.geojson]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRACT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TRACT]</local-name>
+            <parent-name>[Bexar_County_Census_Tracts.geojson]</parent-name>
+            <remote-alias>TRACT</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUM_POPULATION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SUM_POPULATION]</local-name>
+            <parent-name>[Bexar_County_Census_Tracts.geojson]</parent-name>
+            <remote-alias>SUM_POPULATION</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShapeSTArea</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ShapeSTArea]</local-name>
+            <parent-name>[Bexar_County_Census_Tracts.geojson]</parent-name>
+            <remote-alias>ShapeSTArea</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShapeSTLength</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ShapeSTLength]</local-name>
+            <parent-name>[Bexar_County_Census_Tracts.geojson]</parent-name>
+            <remote-alias>ShapeSTLength</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[Bexar_County_Census_Tracts.geojson]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column caption='Sum Population' datatype='integer' name='[SUM_POPULATION]' role='measure' type='quantitative' />
+      <column caption='Shape ST Area' datatype='real' name='[ShapeSTArea]' role='measure' type='quantitative' />
+      <column caption='Shape ST Length' datatype='real' name='[ShapeSTLength]' role='measure' type='quantitative' />
+      <column caption='Tract' datatype='string' name='[TRACT]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='2020_bexar.csv' datatype='table' name='[__tableau_internal_object_id__].[2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Bexar_County_Census_Tracts.geojson' datatype='table' name='[__tableau_internal_object_id__].[Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC]' role='measure' type='quantitative' />
+      <column caption='Action Taken' datatype='integer' name='[action_taken]' role='measure' type='quantitative' />
+      <column caption='Activity Year' datatype='integer' name='[activity_year]' role='dimension' type='quantitative' />
+      <column caption='Applicant Age' datatype='string' name='[applicant_age]' role='dimension' type='nominal' />
+      <column caption='Applicant Age Above 62' datatype='string' name='[applicant_age_above_62]' role='dimension' type='nominal' />
+      <column caption='Applicant Credit Score Type' datatype='integer' name='[applicant_credit_score_type]' role='measure' type='quantitative' />
+      <column caption='Applicant Ethnicity 1' datatype='integer' name='[applicant_ethnicity_1]' role='measure' type='quantitative' />
+      <column caption='Applicant Ethnicity 2' datatype='string' name='[applicant_ethnicity_2]' role='dimension' type='nominal' />
+      <column caption='Applicant Ethnicity 3' datatype='string' name='[applicant_ethnicity_3]' role='dimension' type='nominal' />
+      <column caption='Applicant Ethnicity 4' datatype='string' name='[applicant_ethnicity_4]' role='dimension' type='nominal' />
+      <column caption='Applicant Ethnicity 5' datatype='string' name='[applicant_ethnicity_5]' role='dimension' type='nominal' />
+      <column caption='Applicant Ethnicity Observed' datatype='integer' name='[applicant_ethnicity_observed]' role='measure' type='quantitative' />
+      <column caption='Applicant Race 1' datatype='integer' name='[applicant_race_1]' role='measure' type='quantitative' />
+      <column caption='Applicant Race 2' datatype='string' name='[applicant_race_2]' role='dimension' type='nominal' />
+      <column caption='Applicant Race 3' datatype='string' name='[applicant_race_3]' role='dimension' type='nominal' />
+      <column caption='Applicant Race 4' datatype='string' name='[applicant_race_4]' role='dimension' type='nominal' />
+      <column caption='Applicant Race 5' datatype='string' name='[applicant_race_5]' role='dimension' type='nominal' />
+      <column caption='Applicant Race Observed' datatype='integer' name='[applicant_race_observed]' role='measure' type='quantitative' />
+      <column caption='Applicant Sex' datatype='integer' name='[applicant_sex]' role='measure' type='quantitative' />
+      <column caption='Applicant Sex Observed' datatype='integer' name='[applicant_sex_observed]' role='measure' type='quantitative' />
+      <column caption='Aus 1' datatype='integer' name='[aus_1]' role='measure' type='quantitative' />
+      <column caption='Aus 2' datatype='string' name='[aus_2]' role='dimension' type='nominal' />
+      <column caption='Aus 3' datatype='string' name='[aus_3]' role='dimension' type='nominal' />
+      <column caption='Aus 4' datatype='string' name='[aus_4]' role='dimension' type='nominal' />
+      <column caption='Aus 5' datatype='string' name='[aus_5]' role='dimension' type='nominal' />
+      <column caption='Balloon Payment' datatype='integer' name='[balloon_payment]' role='measure' type='quantitative' />
+      <column caption='Business Or Commercial Purpose' datatype='integer' name='[business_or_commercial_purpose]' role='measure' type='quantitative' />
+      <column caption='Census Tract' datatype='integer' name='[census_tract]' role='measure' type='quantitative' />
+      <column caption='Co Applicant Age' datatype='string' name='[co_applicant_age]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Age Above 62' datatype='string' name='[co_applicant_age_above_62]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Credit Score Type' datatype='integer' name='[co_applicant_credit_score_type]' role='measure' type='quantitative' />
+      <column caption='Co Applicant Ethnicity 1' datatype='integer' name='[co_applicant_ethnicity_1]' role='measure' type='quantitative' />
+      <column caption='Co Applicant Ethnicity 2' datatype='string' name='[co_applicant_ethnicity_2]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Ethnicity 3' datatype='string' name='[co_applicant_ethnicity_3]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Ethnicity 4' datatype='string' name='[co_applicant_ethnicity_4]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Ethnicity 5' datatype='string' name='[co_applicant_ethnicity_5]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Ethnicity Observed' datatype='integer' name='[co_applicant_ethnicity_observed]' role='measure' type='quantitative' />
+      <column caption='Co Applicant Race 1' datatype='integer' name='[co_applicant_race_1]' role='measure' type='quantitative' />
+      <column caption='Co Applicant Race 2' datatype='string' name='[co_applicant_race_2]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Race 3' datatype='string' name='[co_applicant_race_3]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Race 4' datatype='string' name='[co_applicant_race_4]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Race 5' datatype='string' name='[co_applicant_race_5]' role='dimension' type='nominal' />
+      <column caption='Co Applicant Race Observed' datatype='integer' name='[co_applicant_race_observed]' role='measure' type='quantitative' />
+      <column caption='Co Applicant Sex' datatype='integer' name='[co_applicant_sex]' role='measure' type='quantitative' />
+      <column caption='Co Applicant Sex Observed' datatype='integer' name='[co_applicant_sex_observed]' role='measure' type='quantitative' />
+      <column caption='Combined Loan To Value Ratio' datatype='string' name='[combined_loan_to_value_ratio]' role='dimension' type='nominal' />
+      <column caption='Conforming Loan Limit' datatype='string' name='[conforming_loan_limit]' role='dimension' type='nominal' />
+      <column caption='Construction Method' datatype='integer' name='[construction_method]' role='measure' type='quantitative' />
+      <column caption='County Code' datatype='integer' name='[county_code]' role='dimension' type='ordinal' />
+      <column caption='Debt To Income Ratio' datatype='string' name='[debt_to_income_ratio]' role='dimension' type='nominal' />
+      <column caption='Denial Reason 1' datatype='integer' name='[denial_reason_1]' role='measure' type='quantitative' />
+      <column caption='Denial Reason 2' datatype='string' name='[denial_reason_2]' role='dimension' type='nominal' />
+      <column caption='Denial Reason 3' datatype='string' name='[denial_reason_3]' role='dimension' type='nominal' />
+      <column caption='Denial Reason 4' datatype='string' name='[denial_reason_4]' role='dimension' type='nominal' />
+      <column caption='Derived Dwelling Category' datatype='string' name='[derived_dwelling_category]' role='dimension' type='nominal' />
+      <column caption='Derived Ethnicity' datatype='string' name='[derived_ethnicity]' role='dimension' type='nominal' />
+      <column caption='Derived Loan Product Type' datatype='string' name='[derived_loan_product_type]' role='dimension' type='nominal' />
+      <column caption='Derived Msa Md' datatype='integer' name='[derived_msa_md]' role='measure' type='quantitative' />
+      <column caption='Derived Race' datatype='string' name='[derived_race]' role='dimension' type='nominal' />
+      <column caption='Derived Sex' datatype='string' name='[derived_sex]' role='dimension' type='nominal' />
+      <column caption='Discount Points' datatype='string' name='[discount_points]' role='dimension' type='nominal' />
+      <column caption='Ffiec Msa Md Median Family Income' datatype='integer' name='[ffiec_msa_md_median_family_income]' role='measure' type='quantitative' />
+      <column caption='Hoepa Status' datatype='integer' name='[hoepa_status]' role='measure' type='quantitative' />
+      <column caption='Income' datatype='string' name='[income]' role='dimension' type='nominal' />
+      <column caption='Initially Payable To Institution' datatype='integer' name='[initially_payable_to_institution]' role='measure' type='quantitative' />
+      <column caption='Interest Only Payment' datatype='integer' name='[interest_only_payment]' role='measure' type='quantitative' />
+      <column caption='Interest Rate' datatype='string' name='[interest_rate]' role='dimension' type='nominal' />
+      <column caption='Intro Rate Period' datatype='string' name='[intro_rate_period]' role='dimension' type='nominal' />
+      <column caption='Lei' datatype='string' name='[lei]' role='dimension' type='nominal' />
+      <column caption='Lender Credits' datatype='string' name='[lender_credits]' role='dimension' type='nominal' />
+      <column caption='Lien Status' datatype='integer' name='[lien_status]' role='measure' type='quantitative' />
+      <column caption='Loan Amount' datatype='integer' name='[loan_amount]' role='measure' type='quantitative' />
+      <column caption='Loan Purpose' datatype='integer' name='[loan_purpose]' role='measure' type='quantitative' />
+      <column caption='Loan Term' datatype='integer' name='[loan_term]' role='measure' type='quantitative' />
+      <column caption='Loan Type' datatype='integer' name='[loan_type]' role='measure' type='quantitative' />
+      <column caption='Manufactured Home Land Property Interest' datatype='integer' name='[manufactured_home_land_property_interest]' role='measure' type='quantitative' />
+      <column caption='Manufactured Home Secured Property Type' datatype='integer' name='[manufactured_home_secured_property_type]' role='measure' type='quantitative' />
+      <column caption='Multifamily Affordable Units' datatype='string' name='[multifamily_affordable_units]' role='dimension' type='nominal' />
+      <column caption='Negative Amortization' datatype='integer' name='[negative_amortization]' role='measure' type='quantitative' />
+      <column caption='Occupancy Type' datatype='integer' name='[occupancy_type]' role='measure' type='quantitative' />
+      <column caption='Open End Line Of Credit' datatype='integer' name='[open_end_line_of_credit]' role='measure' type='quantitative' />
+      <column caption='Origination Charges' datatype='string' name='[origination_charges]' role='dimension' type='nominal' />
+      <column caption='Other Nonamortizing Features' datatype='integer' name='[other_nonamortizing_features]' role='measure' type='quantitative' />
+      <column caption='Preapproval' datatype='integer' name='[preapproval]' role='measure' type='quantitative' />
+      <column caption='Prepayment Penalty Term' datatype='string' name='[prepayment_penalty_term]' role='dimension' type='nominal' />
+      <column caption='Property Value' datatype='string' name='[property_value]' role='dimension' type='nominal' />
+      <column caption='Purchaser Type' datatype='integer' name='[purchaser_type]' role='measure' type='quantitative' />
+      <column caption='Rate Spread' datatype='string' name='[rate_spread]' role='dimension' type='nominal' />
+      <column caption='Reverse Mortgage' datatype='integer' name='[reverse_mortgage]' role='measure' type='quantitative' />
+      <column caption='State Code' datatype='string' name='[state_code]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Submission Of Application' datatype='integer' name='[submission_of_application]' role='measure' type='quantitative' />
+      <column caption='Total Loan Costs' datatype='string' name='[total_loan_costs]' role='dimension' type='nominal' />
+      <column caption='Total Points And Fees' datatype='string' name='[total_points_and_fees]' role='dimension' type='nominal' />
+      <column caption='Total Units' datatype='integer' name='[total_units]' role='measure' type='quantitative' />
+      <column caption='Tract Median Age Of Housing Units' datatype='integer' name='[tract_median_age_of_housing_units]' role='measure' type='quantitative' />
+      <column caption='Tract Minority Population Percent' datatype='real' name='[tract_minority_population_percent]' role='measure' type='quantitative' />
+      <column caption='Tract One To Four Family Homes' datatype='integer' name='[tract_one_to_four_family_homes]' role='measure' type='quantitative' />
+      <column caption='Tract Owner Occupied Units' datatype='integer' name='[tract_owner_occupied_units]' role='measure' type='quantitative' />
+      <column caption='Tract Population' datatype='integer' name='[tract_population]' role='measure' type='quantitative' />
+      <column caption='Tract To Msa Income Percentage' datatype='integer' name='[tract_to_msa_income_percentage]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='2020_bexar.csv' id='2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79'>
+            <properties context=''>
+              <relation connection='textscan.1o2vm7a1doukp51047re81g9uhyx' name='2020_bexar.csv' table='[2020_bexar#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='activity_year' ordinal='0' />
+                  <column datatype='string' name='lei' ordinal='1' />
+                  <column datatype='integer' name='derived_msa_md' ordinal='2' />
+                  <column datatype='string' name='state_code' ordinal='3' />
+                  <column datatype='integer' name='county_code' ordinal='4' />
+                  <column datatype='integer' name='census_tract' ordinal='5' />
+                  <column datatype='string' name='conforming_loan_limit' ordinal='6' />
+                  <column datatype='string' name='derived_loan_product_type' ordinal='7' />
+                  <column datatype='string' name='derived_dwelling_category' ordinal='8' />
+                  <column datatype='string' name='derived_ethnicity' ordinal='9' />
+                  <column datatype='string' name='derived_race' ordinal='10' />
+                  <column datatype='string' name='derived_sex' ordinal='11' />
+                  <column datatype='integer' name='action_taken' ordinal='12' />
+                  <column datatype='integer' name='purchaser_type' ordinal='13' />
+                  <column datatype='integer' name='preapproval' ordinal='14' />
+                  <column datatype='integer' name='loan_type' ordinal='15' />
+                  <column datatype='integer' name='loan_purpose' ordinal='16' />
+                  <column datatype='integer' name='lien_status' ordinal='17' />
+                  <column datatype='integer' name='reverse_mortgage' ordinal='18' />
+                  <column datatype='integer' name='open_end_line_of_credit' ordinal='19' />
+                  <column datatype='integer' name='business_or_commercial_purpose' ordinal='20' />
+                  <column datatype='integer' name='loan_amount' ordinal='21' />
+                  <column datatype='string' name='combined_loan_to_value_ratio' ordinal='22' />
+                  <column datatype='string' name='interest_rate' ordinal='23' />
+                  <column datatype='string' name='rate_spread' ordinal='24' />
+                  <column datatype='integer' name='hoepa_status' ordinal='25' />
+                  <column datatype='string' name='total_loan_costs' ordinal='26' />
+                  <column datatype='string' name='total_points_and_fees' ordinal='27' />
+                  <column datatype='string' name='origination_charges' ordinal='28' />
+                  <column datatype='string' name='discount_points' ordinal='29' />
+                  <column datatype='string' name='lender_credits' ordinal='30' />
+                  <column datatype='integer' name='loan_term' ordinal='31' />
+                  <column datatype='string' name='prepayment_penalty_term' ordinal='32' />
+                  <column datatype='string' name='intro_rate_period' ordinal='33' />
+                  <column datatype='integer' name='negative_amortization' ordinal='34' />
+                  <column datatype='integer' name='interest_only_payment' ordinal='35' />
+                  <column datatype='integer' name='balloon_payment' ordinal='36' />
+                  <column datatype='integer' name='other_nonamortizing_features' ordinal='37' />
+                  <column datatype='string' name='property_value' ordinal='38' />
+                  <column datatype='integer' name='construction_method' ordinal='39' />
+                  <column datatype='integer' name='occupancy_type' ordinal='40' />
+                  <column datatype='integer' name='manufactured_home_secured_property_type' ordinal='41' />
+                  <column datatype='integer' name='manufactured_home_land_property_interest' ordinal='42' />
+                  <column datatype='integer' name='total_units' ordinal='43' />
+                  <column datatype='string' name='multifamily_affordable_units' ordinal='44' />
+                  <column datatype='string' name='income' ordinal='45' />
+                  <column datatype='string' name='debt_to_income_ratio' ordinal='46' />
+                  <column datatype='integer' name='applicant_credit_score_type' ordinal='47' />
+                  <column datatype='integer' name='co_applicant_credit_score_type' ordinal='48' />
+                  <column datatype='integer' name='applicant_ethnicity_1' ordinal='49' />
+                  <column datatype='string' name='applicant_ethnicity_2' ordinal='50' />
+                  <column datatype='string' name='applicant_ethnicity_3' ordinal='51' />
+                  <column datatype='string' name='applicant_ethnicity_4' ordinal='52' />
+                  <column datatype='string' name='applicant_ethnicity_5' ordinal='53' />
+                  <column datatype='integer' name='co_applicant_ethnicity_1' ordinal='54' />
+                  <column datatype='string' name='co_applicant_ethnicity_2' ordinal='55' />
+                  <column datatype='string' name='co_applicant_ethnicity_3' ordinal='56' />
+                  <column datatype='string' name='co_applicant_ethnicity_4' ordinal='57' />
+                  <column datatype='string' name='co_applicant_ethnicity_5' ordinal='58' />
+                  <column datatype='integer' name='applicant_ethnicity_observed' ordinal='59' />
+                  <column datatype='integer' name='co_applicant_ethnicity_observed' ordinal='60' />
+                  <column datatype='integer' name='applicant_race_1' ordinal='61' />
+                  <column datatype='string' name='applicant_race_2' ordinal='62' />
+                  <column datatype='string' name='applicant_race_3' ordinal='63' />
+                  <column datatype='string' name='applicant_race_4' ordinal='64' />
+                  <column datatype='string' name='applicant_race_5' ordinal='65' />
+                  <column datatype='integer' name='co_applicant_race_1' ordinal='66' />
+                  <column datatype='string' name='co_applicant_race_2' ordinal='67' />
+                  <column datatype='string' name='co_applicant_race_3' ordinal='68' />
+                  <column datatype='string' name='co_applicant_race_4' ordinal='69' />
+                  <column datatype='string' name='co_applicant_race_5' ordinal='70' />
+                  <column datatype='integer' name='applicant_race_observed' ordinal='71' />
+                  <column datatype='integer' name='co_applicant_race_observed' ordinal='72' />
+                  <column datatype='integer' name='applicant_sex' ordinal='73' />
+                  <column datatype='integer' name='co_applicant_sex' ordinal='74' />
+                  <column datatype='integer' name='applicant_sex_observed' ordinal='75' />
+                  <column datatype='integer' name='co_applicant_sex_observed' ordinal='76' />
+                  <column datatype='string' name='applicant_age' ordinal='77' />
+                  <column datatype='string' name='co_applicant_age' ordinal='78' />
+                  <column datatype='string' name='applicant_age_above_62' ordinal='79' />
+                  <column datatype='string' name='co_applicant_age_above_62' ordinal='80' />
+                  <column datatype='integer' name='submission_of_application' ordinal='81' />
+                  <column datatype='integer' name='initially_payable_to_institution' ordinal='82' />
+                  <column datatype='integer' name='aus_1' ordinal='83' />
+                  <column datatype='string' name='aus_2' ordinal='84' />
+                  <column datatype='string' name='aus_3' ordinal='85' />
+                  <column datatype='string' name='aus_4' ordinal='86' />
+                  <column datatype='string' name='aus_5' ordinal='87' />
+                  <column datatype='integer' name='denial_reason_1' ordinal='88' />
+                  <column datatype='string' name='denial_reason_2' ordinal='89' />
+                  <column datatype='string' name='denial_reason_3' ordinal='90' />
+                  <column datatype='string' name='denial_reason_4' ordinal='91' />
+                  <column datatype='integer' name='tract_population' ordinal='92' />
+                  <column datatype='real' name='tract_minority_population_percent' ordinal='93' />
+                  <column datatype='integer' name='ffiec_msa_md_median_family_income' ordinal='94' />
+                  <column datatype='integer' name='tract_to_msa_income_percentage' ordinal='95' />
+                  <column datatype='integer' name='tract_owner_occupied_units' ordinal='96' />
+                  <column datatype='integer' name='tract_one_to_four_family_homes' ordinal='97' />
+                  <column datatype='integer' name='tract_median_age_of_housing_units' ordinal='98' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Bexar_County_Census_Tracts.geojson' id='Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC'>
+            <properties context=''>
+              <relation connection='ogrdirect.12oilfb1p950781cvmyac1vsscbg' name='Bexar_County_Census_Tracts.geojson' table='[Bexar_County_Census_Tracts.geojson]' type='table'>
+                <columns>
+                  <column datatype='integer' name='OBJECTID' ordinal='0' />
+                  <column datatype='string' name='TRACT' ordinal='1' />
+                  <column datatype='integer' name='SUM_POPULATION' ordinal='2' />
+                  <column datatype='real' name='ShapeSTArea' ordinal='3' />
+                  <column datatype='real' name='ShapeSTLength' ordinal='4' />
+                  <column datatype='spatial' name='Geometry' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression _.fcp.RelationshipCalculations.false...op='[STR(census_tract)]' _.fcp.RelationshipCalculations.true...op='STR([census_tract])' />
+              <expression op='[TRACT]' />
+            </expression>
+            <first-end-point object-id='2020_bexar.csv_29DD24D7A0004F6CB25D9457ACD7BD79' />
+            <second-end-point object-id='Bexar_County_Census_Tracts.geojson_166D37040735408D9512BD0662E82CFC' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2020_bexar' name='federated.1m6bb3m0nruabu1bykeew0db0t9s' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1m6bb3m0nruabu1bykeew0db0t9s'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='Tract' datatype='string' name='[TRACT]' role='dimension' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='Loan Amount' datatype='integer' name='[loan_amount]' role='measure' type='quantitative' />
+            <column-instance column='[TRACT]' derivation='None' name='[none:TRACT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[loan_amount]' derivation='Sum' name='[sum:loan_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[Longitude (generated)]' field-type='quantitative' max='-10917404.95143703' min='-11018396.002145944' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[Latitude (generated)]' field-type='quantitative' max='3466539.8265501284' min='3408261.3906647656' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[sum:loan_amount:qk]' max='300000000' min='20000000' num-steps='7' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[sum:loan_amount:qk]' />
+              <lod column='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[clct:Geometry:nk]' />
+              <lod column='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[none:TRACT:nk]' />
+              <geometry column='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1m6bb3m0nruabu1bykeew0db0t9s].[Latitude (generated)]</rows>
+        <cols>[federated.1m6bb3m0nruabu1bykeew0db0t9s].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8AD57D96-F780-48DA-8D8D-ABF996284B89}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1m6bb3m0nruabu1bykeew0db0t9s].[sum:loan_amount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1m6bb3m0nruabu1bykeew0db0t9s].[none:TRACT:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{07134A7E-9D26-4B12-BCEA-7303328DA5EA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
